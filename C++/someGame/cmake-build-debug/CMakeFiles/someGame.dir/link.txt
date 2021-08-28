@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/someGame.dir/main.cpp.o  -o someGame 

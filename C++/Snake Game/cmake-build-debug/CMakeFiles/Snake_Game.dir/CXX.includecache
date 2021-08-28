@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hrishikesh/Documents/Programming/Game Development/C++/Snake Game/main.cpp
+iostream
+-
+stdio.h
+-
+termios.h
+-
+unistd.h
+-
+fcntl.h
+-
+
