@@ -17,7 +17,7 @@ text_surface = test_font.render('RUNNER', False, 'Black')
 snail_surface = pygame.image.load('graphics/snail/snail1.png').convert_alpha()
 snail_rect = snail_surface.get_rect(midbottom = (600, 300))
 
-player_surface = pygame.image.load('graphics/player/player_walk_1.png').convert_alpha()
+player_surface = pygame.image.load('graphics/Player/player_walk_1.png').convert_alpha()
 player_rect = player_surface.get_rect(midbottom = (80,300))
 
 
@@ -28,7 +28,18 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()      
             exit()
-    # attaching game surface to display surface        
+#        if event.type == pygame.MOUSEBUTTONDOWN:
+#            print("mouse down")
+#
+#        if event.type == pygame.MOUSEBUTTONUP:
+#            print("mouse up")
+        
+#        if event.type == pygame.MOUSEMOTION:
+#            if player_rect.collidepoint(event.pos):
+#                print("OVER THE PLAYER")
+ 
+
+  # attaching game surface to display surface        
     SURFACE.blit(sky_surface, (0,0))
     SURFACE.blit(ground_surface, (0,300))
     SURFACE.blit(text_surface, (325,100))
@@ -38,6 +49,13 @@ while True:
         snail_rect.left = 800
     
     SURFACE.blit(player_surface,player_rect)
+
+    #if player_rect.colliderect(snail_rect):
+    #    print("Collision")
+
+#    mouse_pos = pygame.mouse.get_pos()
+#    if player_rect.collidepoint(mouse_pos):
+#        print("OVER THE PLAYER")
 
 
     pygame.display.update()
